@@ -7,7 +7,6 @@ sll_node_t* new_node(){
     node->data = NULL;
     node->size = 0;
     node->next = NULL;
-    printf("Created node %p\n", node);
     return node;
 }
 
@@ -51,7 +50,6 @@ int print_list(sll_node_t* list){
 void clear_list(sll_node_t** head){
     sll_node_t* cursor = *head;
     while(cursor != NULL){
-        printf("Traversing list.\n");
         free(cursor->data);
         cursor->data = NULL;
         sll_node_t* aux = cursor;

@@ -16,8 +16,6 @@ int main(int argc, char **argv){
     sll_node_t* list = NULL;
     int i;
 
-    print_months();
-
     for(i = 0; i < M_SIZE; i++){
         sll_node_t* node = new_node();
         if(node == NULL){
