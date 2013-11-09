@@ -7,13 +7,20 @@ struct Node {
   char *data;
   struct Node* next;
 };
+
 typedef struct Node sll_node_t;
 
 sll_node_t* new_node();
-int insert_front(sll_node_t *head, sll_node_t *node);
-int insert_back(sll_node_t *head, sll_node_t *node);
 sll_node_t* pop(sll_node_t * head, sll_node_t *node);
+sll_node_t* search(sll_node_t* head, sll_node_t* node);
+
+int insert_front(sll_node_t *head, sll_node_t *node);
+int insert_back(sll_node_t **head, sll_node_t *node);
+
 int pop_front(sll_node_t *head);
 int pop_back(sll_node_t *head);
-sll_node_t* search(sll_node_t* head, sll_node_t* node);
+
+int print_list(sll_node_t* list);
+void clear_list(sll_node_t** head);
+
 #endif
