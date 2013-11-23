@@ -1,0 +1,18 @@
+{
+	Ncurses suppressor file for Valgrind
+		Memcheck:Leak
+		...
+		obj:/usr/lib/libncurses.so.5.9
+}
+{
+	Ncurses suppressor file for Valgrind
+		Memcheck:Cond
+		...
+		obj:/usr/lib/libncurses.so.5.9
+}
+{
+	Ncurses suppressor file for Valgrind
+		Memcheck:Value8
+		...
+		obj:/usr/lib/libncurses.so.5.9
+}

@@ -1,0 +1,6 @@
+--memcheck:leak-check=full
+--memcheck:show-reachable=yes
+--memcheck:suppressions=ncurses.supp
+--memcheck:track-origins=yes
+--log-file=valgrind.log
+
