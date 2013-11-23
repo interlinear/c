@@ -5,7 +5,7 @@
 
 #define M_SIZE 12
 
-char* months[M_SIZE] = {"January", "February", "March", "April",
+static char* months[M_SIZE] = {"January", "February", "March", "April",
                 "May", "June", "July", "August", "September",
                 "October", "November", "December"
                 };
